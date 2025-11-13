@@ -46,19 +46,22 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            padding: 150px 7% 210px;
-            gap: clamp(48px, 6vw, 96px);
+            padding: clamp(150px, 15vw, 190px) clamp(64px, 7vw, 96px) clamp(220px, 17vw, 260px);
+            gap: clamp(56px, 7vw, 110px);
+            max-width: 1180px;
+            width: 100%;
+            margin: 0 auto;
         }
 
         /* Top branding */
         .branding {
             position: absolute;
-            top: 48px;
-            right: 56px;
+            top: clamp(32px, 6vw, 56px);
+            right: clamp(32px, 7vw, 80px);
             z-index: 2;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 14px;
             text-align: right;
         }
 
@@ -72,15 +75,17 @@
             font-size: 16px;
             color: var(--white);
             letter-spacing: 0.5px;
+            line-height: 1.35;
+            max-width: 160px;
         }
 
         /* Pill tags */
         .pill-group {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
-            width: clamp(360px, 42vw, 520px);
-            margin-bottom: 32px;
+            gap: clamp(16px, 2.4vw, 28px);
+            margin-bottom: 28px;
         }
 
         .pill {
@@ -104,8 +109,6 @@
             background-color: rgba(255, 255, 255, 0.95);
             color: var(--dark-text);
             border: 1px solid rgba(0, 0, 0, 0.08);
-            margin-left: auto;
-            transform: translateY(-12px);
         }
 
         /* Title and location */
@@ -113,13 +116,13 @@
             max-width: 560px;
             display: flex;
             flex-direction: column;
-            gap: 28px;
+            gap: 26px;
         }
 
         .hero-title {
-            font-size: clamp(50px, 5.6vw, 68px);
+            font-size: clamp(52px, 6vw, 72px);
             font-weight: 700;
-            line-height: 1.05;
+            line-height: 1.03;
             margin-bottom: 0;
             white-space: nowrap;
         }
@@ -171,9 +174,9 @@
         .location-pin {
             display: inline-flex;
             align-items: center;
-            gap: 16px;
-            padding: 18px 26px;
-            background: rgba(237, 237, 237, 0.4);
+            gap: 18px;
+            padding: 18px 28px;
+            background: rgba(237, 237, 237, 0.46);
             border-radius: 999px;
             box-shadow: 0 18px 36px rgba(0, 0, 0, 0.16);
             color: var(--dark-text);
@@ -194,6 +197,7 @@
             padding: 40px 44px 44px;
             box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
             color: var(--dark-text);
+            margin-bottom: 12px;
         }
 
         .form-card h3 {
@@ -288,13 +292,13 @@
         .info-bar {
             position: absolute;
             left: 50%;
-            bottom: 0;
+            bottom: 36px;
             transform: translateX(-50%);
-            width: 50vw;
+            width: clamp(680px, 58vw, 760px);
             background: rgba(255, 255, 255, 0.98);
-            border-radius: 24px 24px 0 0;
+            border-radius: 24px;
             box-shadow: 0 0 250px 200px rgba(0, 0, 0, 0.04);
-            padding: 32px 48px;
+            padding: 28px 44px;
             display: flex;
             justify-content: space-between;
             gap: 32px;
@@ -318,12 +322,12 @@
         /* Tablet adjustments */
         @media (max-width: 1023px) {
             .hero-content {
-                padding: 130px 6% 220px;
-                gap: 48px;
+                padding: clamp(130px, 18vw, 160px) 6% clamp(200px, 22vw, 240px);
+                gap: clamp(40px, 6vw, 64px);
             }
 
             .pill-group {
-                width: clamp(320px, 60vw, 520px);
+                gap: clamp(14px, 3vw, 24px);
             }
 
             .hero-title {
@@ -334,11 +338,13 @@
             .form-card {
                 width: 360px;
                 padding: 34px 36px 38px;
+                margin-bottom: 0;
             }
 
             .info-bar {
-                width: 70vw;
-                padding: 28px 32px;
+                bottom: 24px;
+                width: min(90vw, 680px);
+                padding: 26px 32px;
             }
         }
 
@@ -447,7 +453,7 @@
             <div class="left-column">
                 <div class="pill-group">
                     <span class="pill green">MARZO 2027</span>
-                    <span class="pill white">SOLO 19 PROPIETARIOS</span>
+                    <span class="pill white">SOLO 9 PROPIETARIOS</span>
                 </div>
                 <h1 class="hero-title">Vive <span id="dynamic-text">en CATALINA IV</span></h1>
                 <div class="location-pin">
