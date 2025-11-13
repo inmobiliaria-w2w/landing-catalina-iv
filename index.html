@@ -26,7 +26,6 @@
             font-family: 'Instrument Sans', sans-serif;
             font-weight: 500;
             color: var(--white);
-            background-color: #000;
         }
 
         /* Hero Section */
@@ -35,19 +34,11 @@
             min-height: 100vh;
             background-image: url('https://storage.googleapis.com/msgsndr/dBvLpgVHO5ClKlBDvren/media/69161fa86f7416a19b24f551.png');
             background-size: cover;
-            background-position: center top;
+            background-position: center;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             overflow: hidden;
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.55) 100%);
-            pointer-events: none;
         }
 
         .hero-content {
@@ -176,7 +167,7 @@
             align-items: center;
             gap: 12px;
             padding: 14px 20px;
-            background: rgba(255, 255, 255, 0.96);
+            background: rgba(237, 237, 237, 0.4);
             border-radius: 999px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
             color: var(--dark-text);
@@ -336,10 +327,6 @@
                 background-position: 65% top;
             }
 
-            .hero::before {
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 10%, rgba(0, 0, 0, 0.45) 60%, rgba(0, 0, 0, 0.85) 100%);
-            }
-
             .branding {
                 top: 24px;
                 right: 20px;
@@ -490,7 +477,7 @@
         const dynamicText = document.getElementById('dynamic-text');
         let currentIndex = 0;
         let isAnimating = false;
-        dynamicText.textContent = phrases[currentIndex].toUpperCase();
+        dynamicText.textContent = phrases[currentIndex];
 
         const cyclePhrases = () => {
             if (isAnimating) return;
@@ -502,7 +489,7 @@
         dynamicText.addEventListener('animationend', (event) => {
             if (event.animationName === 'wipeOut') {
                 currentIndex = (currentIndex + 1) % phrases.length;
-                dynamicText.textContent = phrases[currentIndex].toUpperCase();
+                dynamicText.textContent = phrases[currentIndex];
                 dynamicText.classList.remove('wipe-out');
                 dynamicText.classList.add('wipe-in');
             } else if (event.animationName === 'wipeIn') {
