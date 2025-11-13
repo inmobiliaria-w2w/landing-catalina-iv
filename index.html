@@ -37,7 +37,6 @@
             background-position: center;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             overflow: hidden;
         }
 
@@ -46,16 +45,16 @@
             z-index: 1;
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
-            padding: 120px 8% 160px;
-            gap: 48px;
+            align-items: flex-end;
+            padding: 150px 7% 210px;
+            gap: clamp(48px, 6vw, 96px);
         }
 
         /* Top branding */
         .branding {
             position: absolute;
-            top: 32px;
-            right: 40px;
+            top: 48px;
+            right: 56px;
             z-index: 2;
             display: flex;
             align-items: center;
@@ -64,7 +63,7 @@
         }
 
         .branding img {
-            width: 120px;
+            width: 134px;
             height: auto;
         }
 
@@ -78,7 +77,9 @@
         /* Pill tags */
         .pill-group {
             display: flex;
-            gap: 16px;
+            justify-content: space-between;
+            align-items: center;
+            width: clamp(360px, 42vw, 520px);
             margin-bottom: 32px;
         }
 
@@ -86,9 +87,9 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 12px 24px;
+            padding: 10px 24px;
             border-radius: 999px;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 600;
             letter-spacing: 1px;
         }
@@ -96,31 +97,36 @@
         .pill.green {
             background-color: var(--green);
             color: var(--white);
+            align-self: flex-end;
         }
 
         .pill.white {
             background-color: rgba(255, 255, 255, 0.95);
             color: var(--dark-text);
             border: 1px solid rgba(0, 0, 0, 0.08);
+            margin-left: auto;
+            transform: translateY(-12px);
         }
 
         /* Title and location */
         .left-column {
-            max-width: 520px;
+            max-width: 560px;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
         }
 
         .hero-title {
-            font-size: clamp(42px, 4.5vw, 58px);
+            font-size: clamp(50px, 5.6vw, 68px);
             font-weight: 700;
             line-height: 1.05;
-            margin-bottom: 32px;
+            margin-bottom: 0;
             white-space: nowrap;
         }
 
         .hero-title span {
             display: inline-block;
             color: var(--white);
-            text-transform: uppercase;
             position: relative;
         }
 
@@ -165,43 +171,48 @@
         .location-pin {
             display: inline-flex;
             align-items: center;
-            gap: 12px;
-            padding: 14px 20px;
+            gap: 16px;
+            padding: 18px 26px;
             background: rgba(237, 237, 237, 0.4);
             border-radius: 999px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.16);
             color: var(--dark-text);
             font-weight: 500;
-            font-size: 16px;
+            font-size: 17px;
         }
 
         .location-pin img {
-            width: 32px;
-            height: 32px;
+            width: 36px;
+            height: 36px;
         }
 
         /* Contact form card */
         .form-card {
-            width: 360px;
-            background: rgba(255, 255, 255, 0.92);
-            border-radius: 24px;
-            padding: 32px;
-            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+            width: 420px;
+            background: rgba(255, 255, 255, 0.94);
+            border-radius: 28px;
+            padding: 40px 44px 44px;
+            box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
             color: var(--dark-text);
         }
 
         .form-card h3 {
             font-weight: 600;
-            font-size: 16px;
-            letter-spacing: 0.5px;
+            font-size: 18px;
+            letter-spacing: 0.6px;
             text-transform: uppercase;
-            margin-bottom: 24px;
+            margin-bottom: 28px;
+        }
+
+        #contact-form {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px 20px;
         }
 
         .form-group {
             display: flex;
             flex-direction: column;
-            margin-bottom: 18px;
         }
 
         .form-group label {
@@ -213,9 +224,9 @@
 
         .form-group input,
         .form-group textarea {
-            padding: 12px 14px;
-            border-radius: 12px;
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 12px 16px;
+            border-radius: 14px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
             font-family: inherit;
             font-size: 15px;
             color: var(--dark-text);
@@ -224,14 +235,18 @@
 
         .form-group textarea {
             resize: vertical;
-            min-height: 72px;
+            min-height: 92px;
+        }
+
+        .form-group.full-width {
+            grid-column: span 2;
         }
 
         .checkbox-group {
             display: flex;
             align-items: flex-start;
             gap: 10px;
-            margin-bottom: 12px;
+            grid-column: span 2;
         }
 
         .checkbox-group input {
@@ -254,6 +269,7 @@
             padding: 16px;
             cursor: pointer;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
+            grid-column: span 2;
         }
 
         .submit-button:hover,
@@ -263,8 +279,9 @@
         }
 
         .form-status {
-            margin-top: 16px;
+            margin-top: 4px;
             font-size: 14px;
+            grid-column: span 2;
         }
 
         /* Bottom info bar */
@@ -301,8 +318,12 @@
         /* Tablet adjustments */
         @media (max-width: 1023px) {
             .hero-content {
-                padding: 100px 6% 200px;
-                gap: 32px;
+                padding: 130px 6% 220px;
+                gap: 48px;
+            }
+
+            .pill-group {
+                width: clamp(320px, 60vw, 520px);
             }
 
             .hero-title {
@@ -311,13 +332,26 @@
             }
 
             .form-card {
-                width: 320px;
-                padding: 28px;
+                width: 360px;
+                padding: 34px 36px 38px;
             }
 
             .info-bar {
                 width: 70vw;
                 padding: 28px 32px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            #contact-form {
+                grid-template-columns: 1fr;
+            }
+
+            .form-group.full-width,
+            .checkbox-group,
+            .submit-button,
+            .form-status {
+                grid-column: auto;
             }
         }
 
@@ -347,15 +381,24 @@
                 align-items: center;
                 text-align: center;
                 padding: 120px 24px 160px;
+                gap: 36px;
             }
 
             .pill-group {
                 justify-content: center;
-                flex-wrap: wrap;
+                width: 100%;
+                gap: 14px;
+            }
+
+            .pill.white {
+                margin-left: 0;
+                transform: none;
             }
 
             .left-column {
                 max-width: 100%;
+                align-items: center;
+                gap: 24px;
             }
 
             .hero-title {
@@ -366,6 +409,8 @@
             .location-pin {
                 margin: 0 auto;
                 font-size: 15px;
+                gap: 12px;
+                padding: 14px 20px;
             }
 
             .form-card {
@@ -430,7 +475,7 @@
                         <label for="correo">Correo</label>
                         <input type="email" id="correo" name="correo" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group full-width">
                         <label for="mensaje">Mensaje</label>
                         <textarea id="mensaje" name="mensaje" required></textarea>
                     </div>
