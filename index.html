@@ -122,7 +122,8 @@
             line-height: 1.03;
             margin-top: calc(var(--hero-unit) * 0.7);
             margin-bottom: clamp(22px, 3vw, 32px);
-            white-space: nowrap;
+            white-space: normal;
+            max-width: clamp(520px, 48vw, 640px);
         }
 
         .hero-title span {
@@ -551,7 +552,8 @@
             if (!hero) return;
             const heroHeight = hero.offsetHeight;
             const contentHeight = heroContent ? heroContent.offsetHeight : 0;
-            const unit = Math.max(heroHeight, contentHeight) / 15;
+            const referenceHeight = contentHeight || heroHeight;
+            const unit = referenceHeight / 15;
             hero.style.setProperty('--hero-unit', `${unit}px`);
         };
 
