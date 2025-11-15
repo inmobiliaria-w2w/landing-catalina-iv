@@ -51,8 +51,8 @@
         /* Top branding */
         .branding {
             position: absolute;
-            top: calc(var(--hero-unit) * 1);
-            right: clamp(32px, 7vw, 80px);
+            top: calc(var(--hero-unit) * 1.6);
+            right: clamp(56px, 8vw, 120px);
             z-index: 2;
             display: flex;
             align-items: center;
@@ -61,7 +61,7 @@
         }
 
         .branding img {
-            width: 110px;
+            width: 94px;
             height: auto;
         }
 
@@ -77,8 +77,8 @@
         /* Pill tags */
         .left-column {
             position: absolute;
-            top: calc(var(--hero-unit) * 6);
-            left: clamp(48px, 6vw, 96px);
+            top: calc(var(--hero-unit) * 5.6);
+            left: clamp(36px, 5vw, 84px);
             display: flex;
             flex-direction: column;
             max-width: 540px;
@@ -120,7 +120,7 @@
             font-size: clamp(52px, 6vw, 72px);
             font-weight: 700;
             line-height: 1.03;
-            margin-top: calc(var(--hero-unit) * 1);
+            margin-top: calc(var(--hero-unit) * 0.7);
             margin-bottom: clamp(22px, 3vw, 32px);
             white-space: nowrap;
         }
@@ -191,12 +191,12 @@
         /* Contact form card */
         .form-card {
             position: absolute;
-            top: calc(var(--hero-unit) * 5);
-            right: clamp(48px, 6vw, 96px);
-            width: 360px;
+            top: calc(var(--hero-unit) * 5.1);
+            right: clamp(44px, 6vw, 92px);
+            width: 340px;
             background: rgba(255, 255, 255, 0.94);
-            border-radius: 28px;
-            padding: 32px 36px 36px;
+            border-radius: 26px;
+            padding: 28px 30px 32px;
             box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
             color: var(--dark-text);
         }
@@ -206,13 +206,13 @@
             font-size: 17px;
             letter-spacing: 0.6px;
             text-transform: uppercase;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         #contact-form {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 16px 18px;
+            gap: 12px 14px;
         }
 
         .form-group {
@@ -222,25 +222,25 @@
 
         .form-group label {
             font-weight: 500;
-            font-size: 14px;
-            margin-bottom: 6px;
+            font-size: 13px;
+            margin-bottom: 4px;
             color: var(--dark-text);
         }
 
         .form-group input,
         .form-group textarea {
-            padding: 12px 16px;
-            border-radius: 14px;
+            padding: 10px 14px;
+            border-radius: 12px;
             border: 1px solid rgba(0, 0, 0, 0.12);
             font-family: inherit;
-            font-size: 15px;
+            font-size: 14px;
             color: var(--dark-text);
             background-color: rgba(255, 255, 255, 0.9);
         }
 
         .form-group textarea {
             resize: vertical;
-            min-height: 92px;
+            min-height: 82px;
         }
 
         .form-group.full-width {
@@ -250,12 +250,12 @@
         .checkbox-group {
             display: flex;
             align-items: flex-start;
-            gap: 10px;
+            gap: 8px;
             grid-column: span 2;
         }
 
         .checkbox-group input {
-            margin-top: 4px;
+            margin-top: 3px;
         }
 
         .checkbox-group label {
@@ -270,8 +270,8 @@
             background-color: var(--orange);
             color: var(--white);
             font-weight: 600;
-            font-size: 16px;
-            padding: 16px;
+            font-size: 15px;
+            padding: 14px;
             cursor: pointer;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
             grid-column: span 2;
@@ -293,11 +293,11 @@
         .info-bar {
             position: absolute;
             left: 50%;
-            bottom: 36px;
-            transform: translateX(-50%);
+            bottom: 0;
+            transform: translate(-50%, 0);
             width: clamp(680px, 58vw, 760px);
             background: rgba(255, 255, 255, 0.98);
-            border-radius: 24px;
+            border-radius: 26px 26px 0 0;
             box-shadow: 0 0 250px 200px rgba(0, 0, 0, 0.04);
             padding: 28px 44px;
             display: flex;
