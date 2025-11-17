@@ -461,7 +461,7 @@
 
             .title-block {
                 width: 100%;
-                padding-bottom: 0;
+                padding-bottom: 160px;
                 margin-top: 12px;
             }
 
@@ -470,21 +470,24 @@
             }
 
             .location-pin {
-                position: relative;
-                bottom: auto;
-                margin-top: 58px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 24px);
+                margin-top: 0;
             }
 
             .pill-group {
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                width: 100%;
-                gap: 14px;
+                width: auto;
+                gap: 18px;
             }
 
             .pill {
                 white-space: nowrap;
+                width: fit-content;
                 padding: 10px 20px;
                 font-size: 13px;
             }
