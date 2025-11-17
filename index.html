@@ -312,9 +312,9 @@
             left: 50%;
             bottom: 0;
             transform: translate(-50%, 0);
-            width: clamp(680px, 58vw, 760px);
+            width: clamp(720px, 62vw, 860px);
             background: rgba(255, 255, 255, 0.98);
-            border-radius: 26px 26px 0 0;
+            border-radius: 34px 34px 0 0;
             box-shadow: 0 0 250px 200px rgba(0, 0, 0, 0.04);
             padding: 28px 44px;
             display: flex;
@@ -325,7 +325,10 @@
 
         .info-item {
             flex: 1;
-            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            text-align: left;
             color: var(--dark-text);
             font-weight: 600;
             font-size: 16px;
@@ -334,7 +337,7 @@
         .info-item img {
             width: 48px;
             height: 48px;
-            margin-bottom: 12px;
+            margin-bottom: 0;
         }
 
         /* Tablet adjustments */
