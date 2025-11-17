@@ -512,7 +512,7 @@
             }
 
             .hero-title {
-                font-size: clamp(44px, 10vw, 54px);
+                font-size: clamp(52px, 11vw, 64px);
                 white-space: normal;
                 line-height: 1.08;
             }
@@ -610,7 +610,7 @@
                     </div>
                     <div class="form-group full-width">
                         <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" required></textarea>
+                        <textarea id="mensaje" name="mensaje"></textarea>
                     </div>
                     <div class="checkbox-group">
                         <input type="checkbox" id="eval-bancaria" name="eval_bancaria">
@@ -660,13 +660,13 @@
                     <input type="tel" id="celular-mobile" name="celular" required>
                 </div>
                 <div class="form-group">
-                    <label for="correo-mobile">Correo</label>
-                    <input type="email" id="correo-mobile" name="correo" required>
-                </div>
-                <div class="form-group full-width">
-                    <label for="mensaje-mobile">Mensaje</label>
-                    <textarea id="mensaje-mobile" name="mensaje" required></textarea>
-                </div>
+                        <label for="correo-mobile">Correo</label>
+                        <input type="email" id="correo-mobile" name="correo" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="mensaje-mobile">Mensaje</label>
+                        <textarea id="mensaje-mobile" name="mensaje"></textarea>
+                    </div>
                 <div class="checkbox-group">
                     <input type="checkbox" id="eval-bancaria-mobile" name="eval_bancaria">
                     <label for="eval-bancaria-mobile">Deseo pasar evaluación bancaria o ya cuento con un crédito aprobado por el banco</label>
@@ -762,7 +762,7 @@
                 };
 
                 // Validación básica
-                for (const key of ['nombre', 'apellido', 'celular', 'correo', 'mensaje']) {
+                for (const key of ['nombre', 'apellido', 'celular', 'correo']) {
                     if (!payload[key]) {
                         statusEl.textContent = 'Por favor completa todos los campos obligatorios.';
                         statusEl.style.color = '#b00020';
