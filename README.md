@@ -1,2 +1,2 @@
-# landing-catalina-iv
-Aquí se encuentra el código de la landing para el Proyecto Catalina IV
+# landing-catalina-iv-hero
+Aquí se encuentra el código del hero section de la landing para el Proyecto Catalina IV
