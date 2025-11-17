@@ -438,21 +438,24 @@
             .branding {
                 top: 28px;
                 left: 50%;
-                transform: translateX(-50%);
+                transform: translateX(-54%);
                 right: auto;
-                flex-direction: column;
+                flex-direction: row;
                 align-items: center;
-                gap: 6px;
-                text-align: center;
+                justify-content: center;
+                gap: 10px;
+                text-align: left;
             }
 
             .branding img {
                 width: 74px;
+                transform: translateX(-6px);
             }
 
             .branding span {
                 font-size: 12px;
                 line-height: 1.15;
+                white-space: nowrap;
             }
 
             .hero-content {
@@ -468,7 +471,7 @@
                 position: static;
                 align-items: center;
                 gap: 24px;
-                margin-top: 22px;
+                margin-top: 14px;
             }
 
             .title-block {
@@ -582,7 +585,7 @@
         <!-- Branding superior derecho -->
         <div class="branding">
             <img src="https://storage.googleapis.com/msgsndr/dBvLpgVHO5ClKlBDvren/media/6916328b948ba592cf803071.png" alt="Logo Great House">
-            <span>Más de 15<br>años de<br>experiencia</span>
+            <span>Más de 15 años de experiencia</span>
         </div>
 
         <!-- Contenido principal -->
@@ -614,7 +617,7 @@
                         <input type="tel" id="celular" name="celular" placeholder="Celular*" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="correo" name="correo" placeholder="Correo electrónico*" required>
+                        <input type="email" id="correo" name="correo" placeholder="Email*" required>
                     </div>
                     <div class="form-group full-width">
                         <textarea id="mensaje" name="mensaje" placeholder="Mensaje (opcional)"></textarea>
@@ -664,7 +667,7 @@
                     <input type="tel" id="celular-mobile" name="celular" placeholder="Celular*" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" id="correo-mobile" name="correo" placeholder="Correo electrónico*" required>
+                    <input type="email" id="correo-mobile" name="correo" placeholder="Email*" required>
                 </div>
                 <div class="form-group full-width">
                     <textarea id="mensaje-mobile" name="mensaje" placeholder="Mensaje (opcional)"></textarea>
