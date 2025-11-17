@@ -89,7 +89,8 @@
             margin-top: calc(var(--hero-unit) * 0.7);
             position: relative;
             padding-bottom: clamp(60px, 5vw, 74px);
-            min-height: clamp(160px, 11vw, 220px);
+            min-height: clamp(220px, 13vw, 300px);
+            height: clamp(220px, 13vw, 300px);
         }
 
         .pill-group {
@@ -179,11 +180,11 @@
         .location-pin {
             position: absolute;
             left: 0;
-            bottom: 0;
+            bottom: clamp(-36px, -2.4vw, -16px);
             display: inline-flex;
             align-items: center;
             gap: 14px;
-            padding: 10px 24px;
+            padding: 8px 24px;
             background: rgba(0, 0, 0, 0.42);
             border-radius: 999px;
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
@@ -195,6 +196,11 @@
         .location-pin img {
             width: 36px;
             height: 36px;
+            opacity: 0.6;
+        }
+
+        .location-pin span {
+            opacity: 0.8;
         }
 
         /* Contact form card */
@@ -502,7 +508,7 @@
             <div class="left-column">
                 <div class="pill-group">
                     <span class="pill green">MARZO 2027</span>
-                    <span class="pill white">SOLO 9 PROPIETARIOS</span>
+                    <span class="pill white">SOLO 19 PROPIETARIOS</span>
                 </div>
                 <div class="title-block">
                     <h1 class="hero-title">Vive <span id="dynamic-text">en CATALINA IV</span></h1>
