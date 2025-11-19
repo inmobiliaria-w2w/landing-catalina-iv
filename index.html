@@ -28,6 +28,70 @@
             color: var(--white);
         }
 
+        /* Tipologías */
+        .typologies {
+            background: #f9f9f9;
+            color: var(--dark-text);
+            padding: clamp(60px, 8vw, 110px) clamp(24px, 8vw, 120px);
+        }
+
+        .typologies__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: clamp(28px, 4vw, 40px);
+        }
+
+        .typologies__title {
+            font-size: clamp(30px, 4vw, 36px);
+            font-weight: 700;
+            color: #1f1f1f;
+        }
+
+        .typologies__subtitle {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .typologies__grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: clamp(18px, 3vw, 28px);
+        }
+
+        .typology-card {
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+            border: 1px solid #f0f0f0;
+        }
+
+        .typology-card picture,
+        .typology-card img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .typology-card__body {
+            padding: 16px 18px 20px;
+        }
+
+        .typology-card__title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .typology-card__description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.45;
+        }
+
         /* Hero Section */
         .hero {
             position: relative;
@@ -412,6 +476,10 @@
                 width: min(90vw, 680px);
                 padding: 26px 32px;
             }
+
+            .typologies__grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 900px) {
@@ -577,6 +645,19 @@
                 width: 42px;
                 height: 42px;
             }
+
+            .typologies {
+                padding: 48px 18px;
+            }
+
+            .typologies__header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .typologies__subtitle {
+                font-size: 15px;
+            }
         }
     </style>
 </head>
@@ -652,6 +733,55 @@
             </div>
         </div>
     </header>
+
+    <section class="typologies" id="tipologias">
+        <div class="typologies__header">
+            <h2 class="typologies__title">Tipologías</h2>
+            <p class="typologies__subtitle">Elige entre nuestros flats y dúplex pensados para cada estilo de vida.</p>
+        </div>
+        <div class="typologies__grid">
+            <article class="typology-card">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="https://storage.googleapis.com/msgsndr/dBvLpgVHO5ClKlBDvren/media/691e1cbcf05eaf8c232a0444.png">
+                    <img src="https://storage.googleapis.com/msgsndr/dBvLpgVHO5ClKlBDvren/media/691e1cbcf05eaf8c232a0444.png" alt="Flat 1">
+                </picture>
+                <div class="typology-card__body">
+                    <h3 class="typology-card__title">Flat 1</h3>
+                    <p class="typology-card__description">Espacios bien distribuidos para aprovechar al máximo cada ambiente.</p>
+                </div>
+            </article>
+            <article class="typology-card">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="https://storage.googleapis.com/msgsndr/dBvLpgVHO5ClKlBDvren/media/691e1cbc88e1e66202923b12.png">
+                    <img src="https://storage.googleapis.com/msgsndr/dBvLpgVHO5ClKlBDvren/media/691e1cbc88e1e66202923b12.png" alt="Flat 2">
+                </picture>
+                <div class="typology-card__body">
+                    <h3 class="typology-card__title">Flat 2</h3>
+                    <p class="typology-card__description">Diseño pensado para el confort diario con iluminación natural.</p>
+                </div>
+            </article>
+            <article class="typology-card">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="https://storage.googleapis.com/msgsndr/dBvLpgVHO5ClKlBDvren/media/691e1cbcd4f9b35b99712bb7.png">
+                    <img src="https://storage.googleapis.com/msgsndr/dBvLpgVHO5ClKlBDvren/media/691e1cbcd4f9b35b99712bb7.png" alt="Dúplex 1">
+                </picture>
+                <div class="typology-card__body">
+                    <h3 class="typology-card__title">Dúplex 1</h3>
+                    <p class="typology-card__description">Vive con la sensación de casa y ambientes independientes.</p>
+                </div>
+            </article>
+            <article class="typology-card">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="https://storage.googleapis.com/msgsndr/dBvLpgVHO5ClKlBDvren/media/691e1cbc300f06a8c686ff8a.png">
+                    <img src="https://storage.googleapis.com/msgsndr/dBvLpgVHO5ClKlBDvren/media/691e1cbc300f06a8c686ff8a.png" alt="Dúplex 2">
+                </picture>
+                <div class="typology-card__body">
+                    <h3 class="typology-card__title">Dúplex 2</h3>
+                    <p class="typology-card__description">Terrazas y áreas sociales para compartir y relajarte.</p>
+                </div>
+            </article>
+        </div>
+    </section>
 
     <section class="mobile-form">
         <div class="form-card form-card--mobile">
