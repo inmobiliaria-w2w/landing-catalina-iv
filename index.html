@@ -261,6 +261,9 @@
 
         .form-step[data-step="2"] h3 {
             margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.25;
         }
 
         .form-subtitle {
@@ -544,6 +547,11 @@
         @media (max-width: 900px) {
             .personal-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .personal-grid .form-group.full-width,
+            .form-group.full-width {
+                grid-column: 1;
             }
         }
 
