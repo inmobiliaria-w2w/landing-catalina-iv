@@ -369,17 +369,19 @@
             background: rgba(0, 0, 0, 0.04);
             border: 1px solid transparent;
             transition: border-color 0.2s ease, background-color 0.2s ease;
+            cursor: pointer;
+            width: 100%;
         }
 
         .option-item input[type="radio"] {
             width: 18px;
             height: 18px;
+            pointer-events: none;
         }
 
-        .option-item label {
+        .option-item span {
             font-size: 14px;
             color: var(--dark-text);
-            cursor: pointer;
         }
 
         .option-item:hover,
@@ -762,33 +764,33 @@
                     <div class="form-step" data-step="2">
                         <h3>Para ayudarte mejor, déjanos saber:</h3>
                         <div class="question-group">
-                            <p class="question-title">¿Quieres que te ayudemos con la evaluación bancaria?</p>
+                            <p class="question-title">¿Deseas que te ayudemos con la evaluación bancaria?</p>
                             <div class="option-list">
-                                <div class="option-item">
+                                <label class="option-item" for="eval-si">
                                     <input type="radio" id="eval-si" name="eval_bancaria_opcion" value="Sí">
-                                    <label for="eval-si">Sí</label>
-                                </div>
-                                <div class="option-item">
+                                    <span>Sí</span>
+                                </label>
+                                <label class="option-item" for="eval-no">
                                     <input type="radio" id="eval-no" name="eval_bancaria_opcion" value="No gracias, ya pasé evaluación">
-                                    <label for="eval-no">No gracias, ya pasé evaluación</label>
-                                </div>
-                                <div class="option-item">
+                                    <span>No gracias, ya pasé evaluación</span>
+                                </label>
+                                <label class="option-item" for="eval-aun">
                                     <input type="radio" id="eval-aun" name="eval_bancaria_opcion" value="Aún no deseo pasar evaluación">
-                                    <label for="eval-aun">Aún no deseo pasar evaluación</label>
-                                </div>
+                                    <span>Aún no deseo pasar evaluación</span>
+                                </label>
                             </div>
                         </div>
                         <div class="question-group">
-                            <p class="question-title">¿Se ajusta s/347,000 a tu presupuesto?</p>
+                            <p class="question-title">¿Se acomoda s/347,000 a tu presupuesto?</p>
                             <div class="option-list">
-                                <div class="option-item">
+                                <label class="option-item" for="presupuesto-si">
                                     <input type="radio" id="presupuesto-si" name="presupuesto_347" value="Sí, está bien">
-                                    <label for="presupuesto-si">Sí, está bien</label>
-                                </div>
-                                <div class="option-item">
+                                    <span>Sí, está bien</span>
+                                </label>
+                                <label class="option-item" for="presupuesto-no">
                                     <input type="radio" id="presupuesto-no" name="presupuesto_347" value="No, excede">
-                                    <label for="presupuesto-no">No, excede</label>
-                                </div>
+                                    <span>No, excede</span>
+                                </label>
                             </div>
                         </div>
                         <button type="submit" class="submit-button">Enviar</button>
@@ -855,33 +857,33 @@
                 <div class="form-step" data-step="2">
                     <h3>Para ayudarte mejor, déjanos saber:</h3>
                     <div class="question-group">
-                        <p class="question-title">¿Quieres que te ayudemos con la evaluación bancaria?</p>
+                        <p class="question-title">¿Deseas que te ayudemos con la evaluación bancaria?</p>
                         <div class="option-list">
-                            <div class="option-item">
+                            <label class="option-item" for="eval-si-mobile">
                                 <input type="radio" id="eval-si-mobile" name="eval_bancaria_opcion" value="Sí">
-                                <label for="eval-si-mobile">Sí</label>
-                            </div>
-                            <div class="option-item">
+                                <span>Sí</span>
+                            </label>
+                            <label class="option-item" for="eval-no-mobile">
                                 <input type="radio" id="eval-no-mobile" name="eval_bancaria_opcion" value="No gracias, ya pasé evaluación">
-                                <label for="eval-no-mobile">No gracias, ya pasé evaluación</label>
-                            </div>
-                            <div class="option-item">
+                                <span>No gracias, ya pasé evaluación</span>
+                            </label>
+                            <label class="option-item" for="eval-aun-mobile">
                                 <input type="radio" id="eval-aun-mobile" name="eval_bancaria_opcion" value="Aún no deseo pasar evaluación">
-                                <label for="eval-aun-mobile">Aún no deseo pasar evaluación</label>
-                            </div>
+                                <span>Aún no deseo pasar evaluación</span>
+                            </label>
                         </div>
                     </div>
                     <div class="question-group">
-                        <p class="question-title">¿Se ajusta s/347,000 a tu presupuesto?</p>
+                        <p class="question-title">¿Se acomoda s/347,000 a tu presupuesto?</p>
                         <div class="option-list">
-                            <div class="option-item">
+                            <label class="option-item" for="presupuesto-si-mobile">
                                 <input type="radio" id="presupuesto-si-mobile" name="presupuesto_347" value="Sí, está bien">
-                                <label for="presupuesto-si-mobile">Sí, está bien</label>
-                            </div>
-                            <div class="option-item">
+                                <span>Sí, está bien</span>
+                            </label>
+                            <label class="option-item" for="presupuesto-no-mobile">
                                 <input type="radio" id="presupuesto-no-mobile" name="presupuesto_347" value="No, excede">
-                                <label for="presupuesto-no-mobile">No, excede</label>
-                            </div>
+                                <span>No, excede</span>
+                            </label>
                         </div>
                     </div>
                     <button type="submit" class="submit-button">Enviar</button>
