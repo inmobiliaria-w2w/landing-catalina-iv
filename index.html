@@ -249,6 +249,13 @@
             letter-spacing: 0.2px;
         }
 
+        .form-subtitle {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--dark-text);
+            margin: -6px 0 10px;
+        }
+
         .personal-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -703,7 +710,8 @@
             <div class="form-card">
                 <form id="contact-form">
                     <div class="form-step active" data-step="1">
-                        <h3>RECIBE ASESORÍA PERSONALIZADA</h3>
+                        <h3>CONTACTO</h3>
+                        <p class="form-subtitle">Recibe asesoría personalizada:</p>
                         <div class="personal-grid">
                             <div class="form-group">
                                 <input type="text" id="nombre" name="nombre" placeholder="Nombre*" required>
@@ -793,7 +801,8 @@
         <div class="form-card form-card--mobile">
             <form id="contact-form-mobile">
                 <div class="form-step active" data-step="1">
-                    <h3>RECIBE ASESORÍA PERSONALIZADA</h3>
+                    <h3>CONTACTO</h3>
+                    <p class="form-subtitle">Recibe asesoría personalizada:</p>
                     <div class="personal-grid">
                         <div class="form-group">
                             <input type="text" id="nombre-mobile" name="nombre" placeholder="Nombre*" required>
