@@ -230,17 +230,23 @@
         #contact-form-mobile {
             display: flex;
             flex-direction: column;
-            gap: 16px;
         }
 
         .form-step {
             display: none;
-            gap: 12px 14px;
-            grid-template-columns: 1fr;
+            flex-direction: column;
+            gap: 14px;
         }
 
         .form-step.active {
-            display: grid;
+            display: flex;
+        }
+
+        .form-step .form-header {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 4px;
         }
 
         .form-step[data-step="2"] h3,
@@ -253,7 +259,7 @@
             font-size: 13px;
             font-weight: 500;
             color: var(--dark-text);
-            margin: -6px 0 10px;
+            margin: 0 0 10px;
         }
 
         .personal-grid {
@@ -710,8 +716,10 @@
             <div class="form-card">
                 <form id="contact-form">
                     <div class="form-step active" data-step="1">
-                        <h3>CONTACTO</h3>
-                        <p class="form-subtitle">Recibe asesoría personalizada:</p>
+                        <div class="form-header">
+                            <h3>RECIBE ASESORÍA PERSONALIZADA</h3>
+                            <p class="form-subtitle">Déjanos tus datos y te contactaremos.</p>
+                        </div>
                         <div class="personal-grid">
                             <div class="form-group">
                                 <input type="text" id="nombre" name="nombre" placeholder="Nombre*" required>
@@ -801,8 +809,10 @@
         <div class="form-card form-card--mobile">
             <form id="contact-form-mobile">
                 <div class="form-step active" data-step="1">
-                    <h3>CONTACTO</h3>
-                    <p class="form-subtitle">Recibe asesoría personalizada:</p>
+                    <div class="form-header">
+                        <h3>RECIBE ASESORÍA PERSONALIZADA</h3>
+                        <p class="form-subtitle">Déjanos tus datos y te contactaremos.</p>
+                    </div>
                     <div class="personal-grid">
                         <div class="form-group">
                             <input type="text" id="nombre-mobile" name="nombre" placeholder="Nombre*" required>
