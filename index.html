@@ -758,7 +758,14 @@
                                 <textarea id="mensaje" name="mensaje" placeholder="Mensaje (opcional)"></textarea>
                             </div>
                         </div>
-                        <button type="button" class="submit-button" data-action="next">Deseo que me contacten</button>
+                        <button
+                            type="button"
+                            class="submit-button"
+                            data-action="next"
+                            data-sln-event="cta: escritorio - paso1"
+                            data-sln-event-device="desktop"
+                            data-sln-event-step="1"
+                        >Deseo que me contacten</button>
                     </div>
 
                     <div class="form-step" data-step="2">
@@ -766,15 +773,36 @@
                         <div class="question-group">
                             <p class="question-title">¿Deseas que te ayudemos con la evaluación bancaria?</p>
                             <div class="option-list">
-                                <label class="option-item" for="eval-si">
+                                <label
+                                    class="option-item"
+                                    for="eval-si"
+                                    data-sln-event="eval-bancaria: si (desktop)"
+                                    data-sln-event-device="desktop"
+                                    data-sln-event-question="eval-bancaria"
+                                    data-sln-event-choice="si"
+                                >
                                     <input type="radio" id="eval-si" name="eval_bancaria_opcion" value="Sí">
                                     <span>Sí</span>
                                 </label>
-                                <label class="option-item" for="eval-no">
+                                <label
+                                    class="option-item"
+                                    for="eval-no"
+                                    data-sln-event="eval-bancaria: no gracias (desktop)"
+                                    data-sln-event-device="desktop"
+                                    data-sln-event-question="eval-bancaria"
+                                    data-sln-event-choice="no"
+                                >
                                     <input type="radio" id="eval-no" name="eval_bancaria_opcion" value="No gracias, ya pasé evaluación">
                                     <span>No gracias, ya pasé evaluación</span>
                                 </label>
-                                <label class="option-item" for="eval-aun">
+                                <label
+                                    class="option-item"
+                                    for="eval-aun"
+                                    data-sln-event="eval-bancaria: aun no (desktop)"
+                                    data-sln-event-device="desktop"
+                                    data-sln-event-question="eval-bancaria"
+                                    data-sln-event-choice="aun-no"
+                                >
                                     <input type="radio" id="eval-aun" name="eval_bancaria_opcion" value="Aún no deseo pasar evaluación">
                                     <span>Aún no deseo pasar evaluación</span>
                                 </label>
@@ -783,17 +811,37 @@
                         <div class="question-group">
                             <p class="question-title">¿Se acomoda s/347,000 a tu presupuesto?</p>
                             <div class="option-list">
-                                <label class="option-item" for="presupuesto-si">
+                                <label
+                                    class="option-item"
+                                    for="presupuesto-si"
+                                    data-sln-event="presupuesto-347: si (desktop)"
+                                    data-sln-event-device="desktop"
+                                    data-sln-event-question="presupuesto-347"
+                                    data-sln-event-choice="si"
+                                >
                                     <input type="radio" id="presupuesto-si" name="presupuesto_347" value="Sí, está bien">
                                     <span>Sí, está bien</span>
                                 </label>
-                                <label class="option-item" for="presupuesto-no">
+                                <label
+                                    class="option-item"
+                                    for="presupuesto-no"
+                                    data-sln-event="presupuesto-347: no (desktop)"
+                                    data-sln-event-device="desktop"
+                                    data-sln-event-question="presupuesto-347"
+                                    data-sln-event-choice="no"
+                                >
                                     <input type="radio" id="presupuesto-no" name="presupuesto_347" value="No, excede">
                                     <span>No, excede</span>
                                 </label>
                             </div>
                         </div>
-                        <button type="submit" class="submit-button">Enviar</button>
+                        <button
+                            type="submit"
+                            class="submit-button"
+                            data-sln-event="cta: escritorio - enviar"
+                            data-sln-event-device="desktop"
+                            data-sln-event-step="2"
+                        >Enviar</button>
                     </div>
 
                     <div class="form-step completion-step" data-step="3">
@@ -851,7 +899,14 @@
                             <textarea id="mensaje-mobile" name="mensaje" placeholder="Mensaje (opcional)"></textarea>
                         </div>
                     </div>
-                    <button type="button" class="submit-button" data-action="next">Deseo que me contacten</button>
+                    <button
+                        type="button"
+                        class="submit-button"
+                        data-action="next"
+                        data-sln-event="cta: mobile - paso1"
+                        data-sln-event-device="mobile"
+                        data-sln-event-step="1"
+                    >Deseo que me contacten</button>
                 </div>
 
                 <div class="form-step" data-step="2">
@@ -859,15 +914,36 @@
                     <div class="question-group">
                         <p class="question-title">¿Deseas que te ayudemos con la evaluación bancaria?</p>
                         <div class="option-list">
-                            <label class="option-item" for="eval-si-mobile">
+                            <label
+                                class="option-item"
+                                for="eval-si-mobile"
+                                data-sln-event="eval-bancaria: si (mobile)"
+                                data-sln-event-device="mobile"
+                                data-sln-event-question="eval-bancaria"
+                                data-sln-event-choice="si"
+                            >
                                 <input type="radio" id="eval-si-mobile" name="eval_bancaria_opcion" value="Sí">
                                 <span>Sí</span>
                             </label>
-                            <label class="option-item" for="eval-no-mobile">
+                            <label
+                                class="option-item"
+                                for="eval-no-mobile"
+                                data-sln-event="eval-bancaria: no gracias (mobile)"
+                                data-sln-event-device="mobile"
+                                data-sln-event-question="eval-bancaria"
+                                data-sln-event-choice="no"
+                            >
                                 <input type="radio" id="eval-no-mobile" name="eval_bancaria_opcion" value="No gracias, ya pasé evaluación">
                                 <span>No gracias, ya pasé evaluación</span>
                             </label>
-                            <label class="option-item" for="eval-aun-mobile">
+                            <label
+                                class="option-item"
+                                for="eval-aun-mobile"
+                                data-sln-event="eval-bancaria: aun no (mobile)"
+                                data-sln-event-device="mobile"
+                                data-sln-event-question="eval-bancaria"
+                                data-sln-event-choice="aun-no"
+                            >
                                 <input type="radio" id="eval-aun-mobile" name="eval_bancaria_opcion" value="Aún no deseo pasar evaluación">
                                 <span>Aún no deseo pasar evaluación</span>
                             </label>
@@ -876,17 +952,37 @@
                     <div class="question-group">
                         <p class="question-title">¿Se acomoda s/347,000 a tu presupuesto?</p>
                         <div class="option-list">
-                            <label class="option-item" for="presupuesto-si-mobile">
+                            <label
+                                class="option-item"
+                                for="presupuesto-si-mobile"
+                                data-sln-event="presupuesto-347: si (mobile)"
+                                data-sln-event-device="mobile"
+                                data-sln-event-question="presupuesto-347"
+                                data-sln-event-choice="si"
+                            >
                                 <input type="radio" id="presupuesto-si-mobile" name="presupuesto_347" value="Sí, está bien">
                                 <span>Sí, está bien</span>
                             </label>
-                            <label class="option-item" for="presupuesto-no-mobile">
+                            <label
+                                class="option-item"
+                                for="presupuesto-no-mobile"
+                                data-sln-event="presupuesto-347: no (mobile)"
+                                data-sln-event-device="mobile"
+                                data-sln-event-question="presupuesto-347"
+                                data-sln-event-choice="no"
+                            >
                                 <input type="radio" id="presupuesto-no-mobile" name="presupuesto_347" value="No, excede">
                                 <span>No, excede</span>
                             </label>
                         </div>
                     </div>
-                    <button type="submit" class="submit-button">Enviar</button>
+                    <button
+                        type="submit"
+                        class="submit-button"
+                        data-sln-event="cta: mobile - enviar"
+                        data-sln-event-device="mobile"
+                        data-sln-event-step="2"
+                    >Enviar</button>
                 </div>
 
                 <div class="form-step completion-step" data-step="3">
