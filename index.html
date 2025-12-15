@@ -769,69 +769,91 @@
                     </div>
 
                     <div class="form-step" data-step="2">
-                        <h3>Para ayudarte mejor, déjanos saber:</h3>
+                        <h3>Para finalizar, déjanos saber:</h3>
                         <div class="question-group">
-                            <p class="question-title">¿Deseas que te ayudemos con la evaluación bancaria?</p>
+                            <p class="question-title">¿Cuál es el estado actual de tu crédito hipotecario?</p>
                             <div class="option-list">
                                 <label
                                     class="option-item"
-                                    for="eval-si"
-                                    data-sln-event="eval-bancaria: si (desktop)"
+                                    for="credito-preaprobado"
+                                    data-sln-event="credito-hipotecario: preaprobado (desktop)"
                                     data-sln-event-device="desktop"
-                                    data-sln-event-question="eval-bancaria"
-                                    data-sln-event-choice="si"
+                                    data-sln-event-question="credito-hipotecario"
+                                    data-sln-event-choice="preaprobado"
                                 >
-                                    <input type="radio" id="eval-si" name="eval_bancaria_opcion" value="Sí">
-                                    <span>Sí</span>
+                                    <input type="radio" id="credito-preaprobado" name="estado_credito" value="Preaprobado por el banco">
+                                    <span>Preaprobado por el banco</span>
                                 </label>
                                 <label
                                     class="option-item"
-                                    for="eval-no"
-                                    data-sln-event="eval-bancaria: no gracias (desktop)"
+                                    for="credito-evaluacion"
+                                    data-sln-event="credito-hipotecario: evaluacion (desktop)"
                                     data-sln-event-device="desktop"
-                                    data-sln-event-question="eval-bancaria"
-                                    data-sln-event-choice="no"
+                                    data-sln-event-question="credito-hipotecario"
+                                    data-sln-event-choice="evaluacion"
                                 >
-                                    <input type="radio" id="eval-no" name="eval_bancaria_opcion" value="No gracias, ya pasé evaluación">
-                                    <span>No gracias, ya pasé evaluación</span>
+                                    <input type="radio" id="credito-evaluacion" name="estado_credito" value="En evaluación o trámite bancario">
+                                    <span>En evaluación o trámite bancario</span>
                                 </label>
                                 <label
                                     class="option-item"
-                                    for="eval-aun"
-                                    data-sln-event="eval-bancaria: aun no (desktop)"
+                                    for="credito-no-iniciado"
+                                    data-sln-event="credito-hipotecario: no iniciado (desktop)"
                                     data-sln-event-device="desktop"
-                                    data-sln-event-question="eval-bancaria"
-                                    data-sln-event-choice="aun-no"
+                                    data-sln-event-question="credito-hipotecario"
+                                    data-sln-event-choice="no-iniciado"
                                 >
-                                    <input type="radio" id="eval-aun" name="eval_bancaria_opcion" value="Aún no deseo pasar evaluación">
-                                    <span>Aún no deseo pasar evaluación</span>
+                                    <input type="radio" id="credito-no-iniciado" name="estado_credito" value="Aún no he iniciado el proceso">
+                                    <span>Aún no he iniciado el proceso</span>
                                 </label>
                             </div>
                         </div>
                         <div class="question-group">
-                            <p class="question-title">¿Se acomoda s/347,000 a tu presupuesto?</p>
+                            <p class="question-title">¿Cuál es tu presupuesto para la cuota inicial?</p>
                             <div class="option-list">
                                 <label
                                     class="option-item"
-                                    for="presupuesto-si"
-                                    data-sln-event="presupuesto-347: si (desktop)"
+                                    for="presupuesto-35000-45000"
+                                    data-sln-event="presupuesto-cuota: 35000-45000 (desktop)"
                                     data-sln-event-device="desktop"
-                                    data-sln-event-question="presupuesto-347"
-                                    data-sln-event-choice="si"
+                                    data-sln-event-question="presupuesto-cuota"
+                                    data-sln-event-choice="35000-45000"
                                 >
-                                    <input type="radio" id="presupuesto-si" name="presupuesto_347" value="Sí, está bien">
-                                    <span>Sí, está bien</span>
+                                    <input type="radio" id="presupuesto-35000-45000" name="presupuesto_cuota" value="Entre S/35,000 – S/45,000">
+                                    <span>Entre S/35,000 – S/45,000</span>
                                 </label>
                                 <label
                                     class="option-item"
-                                    for="presupuesto-no"
-                                    data-sln-event="presupuesto-347: no (desktop)"
+                                    for="presupuesto-46000-56000"
+                                    data-sln-event="presupuesto-cuota: 46000-56000 (desktop)"
                                     data-sln-event-device="desktop"
-                                    data-sln-event-question="presupuesto-347"
-                                    data-sln-event-choice="no"
+                                    data-sln-event-question="presupuesto-cuota"
+                                    data-sln-event-choice="46000-56000"
                                 >
-                                    <input type="radio" id="presupuesto-no" name="presupuesto_347" value="No, excede">
-                                    <span>No, excede</span>
+                                    <input type="radio" id="presupuesto-46000-56000" name="presupuesto_cuota" value="Entre S/46,000 – S/56,000">
+                                    <span>Entre S/46,000 – S/56,000</span>
+                                </label>
+                                <label
+                                    class="option-item"
+                                    for="presupuesto-57000-70000"
+                                    data-sln-event="presupuesto-cuota: 57000-70000 (desktop)"
+                                    data-sln-event-device="desktop"
+                                    data-sln-event-question="presupuesto-cuota"
+                                    data-sln-event-choice="57000-70000"
+                                >
+                                    <input type="radio" id="presupuesto-57000-70000" name="presupuesto_cuota" value="Entre S/57,000 – S/70,000">
+                                    <span>Entre S/57,000 – S/70,000</span>
+                                </label>
+                                <label
+                                    class="option-item"
+                                    for="presupuesto-menos-35000"
+                                    data-sln-event="presupuesto-cuota: menos-35000 (desktop)"
+                                    data-sln-event-device="desktop"
+                                    data-sln-event-question="presupuesto-cuota"
+                                    data-sln-event-choice="menos-35000"
+                                >
+                                    <input type="radio" id="presupuesto-menos-35000" name="presupuesto_cuota" value="Menos de S/35,000">
+                                    <span>Menos de S/35,000</span>
                                 </label>
                             </div>
                         </div>
@@ -841,7 +863,7 @@
                             data-sln-event="cta: escritorio - enviar"
                             data-sln-event-device="desktop"
                             data-sln-event-step="2"
-                        >Enviar</button>
+                        >Terminar registro</button>
                     </div>
 
                     <div class="form-step completion-step" data-step="3">
@@ -910,69 +932,91 @@
                 </div>
 
                 <div class="form-step" data-step="2">
-                    <h3>Para ayudarte mejor, déjanos saber:</h3>
+                    <h3>Para finalizar, déjanos saber:</h3>
                     <div class="question-group">
-                        <p class="question-title">¿Deseas que te ayudemos con la evaluación bancaria?</p>
+                        <p class="question-title">¿Cuál es el estado actual de tu crédito hipotecario?</p>
                         <div class="option-list">
                             <label
                                 class="option-item"
-                                for="eval-si-mobile"
-                                data-sln-event="eval-bancaria: si (mobile)"
+                                for="credito-preaprobado-mobile"
+                                data-sln-event="credito-hipotecario: preaprobado (mobile)"
                                 data-sln-event-device="mobile"
-                                data-sln-event-question="eval-bancaria"
-                                data-sln-event-choice="si"
+                                data-sln-event-question="credito-hipotecario"
+                                data-sln-event-choice="preaprobado"
                             >
-                                <input type="radio" id="eval-si-mobile" name="eval_bancaria_opcion" value="Sí">
-                                <span>Sí</span>
+                                <input type="radio" id="credito-preaprobado-mobile" name="estado_credito" value="Preaprobado por el banco">
+                                <span>Preaprobado por el banco</span>
                             </label>
                             <label
                                 class="option-item"
-                                for="eval-no-mobile"
-                                data-sln-event="eval-bancaria: no gracias (mobile)"
+                                for="credito-evaluacion-mobile"
+                                data-sln-event="credito-hipotecario: evaluacion (mobile)"
                                 data-sln-event-device="mobile"
-                                data-sln-event-question="eval-bancaria"
-                                data-sln-event-choice="no"
+                                data-sln-event-question="credito-hipotecario"
+                                data-sln-event-choice="evaluacion"
                             >
-                                <input type="radio" id="eval-no-mobile" name="eval_bancaria_opcion" value="No gracias, ya pasé evaluación">
-                                <span>No gracias, ya pasé evaluación</span>
+                                <input type="radio" id="credito-evaluacion-mobile" name="estado_credito" value="En evaluación o trámite bancario">
+                                <span>En evaluación o trámite bancario</span>
                             </label>
                             <label
                                 class="option-item"
-                                for="eval-aun-mobile"
-                                data-sln-event="eval-bancaria: aun no (mobile)"
+                                for="credito-no-iniciado-mobile"
+                                data-sln-event="credito-hipotecario: no iniciado (mobile)"
                                 data-sln-event-device="mobile"
-                                data-sln-event-question="eval-bancaria"
-                                data-sln-event-choice="aun-no"
+                                data-sln-event-question="credito-hipotecario"
+                                data-sln-event-choice="no-iniciado"
                             >
-                                <input type="radio" id="eval-aun-mobile" name="eval_bancaria_opcion" value="Aún no deseo pasar evaluación">
-                                <span>Aún no deseo pasar evaluación</span>
+                                <input type="radio" id="credito-no-iniciado-mobile" name="estado_credito" value="Aún no he iniciado el proceso">
+                                <span>Aún no he iniciado el proceso</span>
                             </label>
                         </div>
                     </div>
                     <div class="question-group">
-                        <p class="question-title">¿Se acomoda s/347,000 a tu presupuesto?</p>
+                        <p class="question-title">¿Cuál es tu presupuesto para la cuota inicial?</p>
                         <div class="option-list">
                             <label
                                 class="option-item"
-                                for="presupuesto-si-mobile"
-                                data-sln-event="presupuesto-347: si (mobile)"
+                                for="presupuesto-35000-45000-mobile"
+                                data-sln-event="presupuesto-cuota: 35000-45000 (mobile)"
                                 data-sln-event-device="mobile"
-                                data-sln-event-question="presupuesto-347"
-                                data-sln-event-choice="si"
+                                data-sln-event-question="presupuesto-cuota"
+                                data-sln-event-choice="35000-45000"
                             >
-                                <input type="radio" id="presupuesto-si-mobile" name="presupuesto_347" value="Sí, está bien">
-                                <span>Sí, está bien</span>
+                                <input type="radio" id="presupuesto-35000-45000-mobile" name="presupuesto_cuota" value="Entre S/35,000 – S/45,000">
+                                <span>Entre S/35,000 – S/45,000</span>
                             </label>
                             <label
                                 class="option-item"
-                                for="presupuesto-no-mobile"
-                                data-sln-event="presupuesto-347: no (mobile)"
+                                for="presupuesto-46000-56000-mobile"
+                                data-sln-event="presupuesto-cuota: 46000-56000 (mobile)"
                                 data-sln-event-device="mobile"
-                                data-sln-event-question="presupuesto-347"
-                                data-sln-event-choice="no"
+                                data-sln-event-question="presupuesto-cuota"
+                                data-sln-event-choice="46000-56000"
                             >
-                                <input type="radio" id="presupuesto-no-mobile" name="presupuesto_347" value="No, excede">
-                                <span>No, excede</span>
+                                <input type="radio" id="presupuesto-46000-56000-mobile" name="presupuesto_cuota" value="Entre S/46,000 – S/56,000">
+                                <span>Entre S/46,000 – S/56,000</span>
+                            </label>
+                            <label
+                                class="option-item"
+                                for="presupuesto-57000-70000-mobile"
+                                data-sln-event="presupuesto-cuota: 57000-70000 (mobile)"
+                                data-sln-event-device="mobile"
+                                data-sln-event-question="presupuesto-cuota"
+                                data-sln-event-choice="57000-70000"
+                            >
+                                <input type="radio" id="presupuesto-57000-70000-mobile" name="presupuesto_cuota" value="Entre S/57,000 – S/70,000">
+                                <span>Entre S/57,000 – S/70,000</span>
+                            </label>
+                            <label
+                                class="option-item"
+                                for="presupuesto-menos-35000-mobile"
+                                data-sln-event="presupuesto-cuota: menos-35000 (mobile)"
+                                data-sln-event-device="mobile"
+                                data-sln-event-question="presupuesto-cuota"
+                                data-sln-event-choice="menos-35000"
+                            >
+                                <input type="radio" id="presupuesto-menos-35000-mobile" name="presupuesto_cuota" value="Menos de S/35,000">
+                                <span>Menos de S/35,000</span>
                             </label>
                         </div>
                     </div>
@@ -982,7 +1026,7 @@
                         data-sln-event="cta: mobile - enviar"
                         data-sln-event-device="mobile"
                         data-sln-event-step="2"
-                    >Enviar</button>
+                    >Terminar registro</button>
                 </div>
 
                 <div class="form-step completion-step" data-step="3">
@@ -1107,10 +1151,10 @@
                 statusEl.textContent = '';
 
                 const formData = new FormData(formEl);
-                const evalChoice = formData.get('eval_bancaria_opcion');
-                const budgetChoice = formData.get('presupuesto_347');
+                const creditStatus = formData.get('estado_credito');
+                const budgetChoice = formData.get('presupuesto_cuota');
 
-                if (!evalChoice || !budgetChoice) {
+                if (!creditStatus || !budgetChoice) {
                     statusEl.textContent = 'Por favor selecciona una opción en ambas preguntas.';
                     statusEl.style.color = '#b00020';
                     return;
@@ -1122,8 +1166,8 @@
                     celular: (formData.get('celular') || '').trim(),
                     correo: (formData.get('correo') || '').trim(),
                     mensaje: (formData.get('mensaje') || '').trim(),
-                    eval_bancaria_respuesta: evalChoice,
-                    presupuesto_347_respuesta: budgetChoice
+                    estado_credito_hipotecario: creditStatus,
+                    presupuesto_cuota_inicial: budgetChoice
                 };
 
                 try {
